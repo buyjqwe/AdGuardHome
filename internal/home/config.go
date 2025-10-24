@@ -514,13 +514,18 @@ var config = &configuration{
 	Filters: []filtering.FilterYAML{{
 		Filter:  filtering.Filter{ID: 1},
 		Enabled: true,
-		URL:     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+		URL:     "https://yyy.biu135.eu.org/adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
 		Name:    "AdGuard DNS filter",
 	}, {
 		Filter:  filtering.Filter{ID: 2},
 		Enabled: false,
-		URL:     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt",
+		URL:     "https://yyy.biu135.eu.org/adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt",
 		Name:    "AdAway Default Blocklist",
+	}, {
+		Filter:  filtering.Filter{ID: 3},
+		Enabled: false,
+		URL:     "https://yyy.biu135.eu.org/raw.githubusercontent.com/gfwlist/gfwlist/refs/heads/master/list.txt",
+		Name:    "gfwlist Blocklist",
 	}},
 	Filtering: &filtering.Config{
 		ProtectionEnabled:  true,
